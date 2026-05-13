@@ -2,7 +2,7 @@
 % wind_steady: vector of steady wind in NED coordinates
 % x: dynamics state vector
 
-function w = airdata(???,wind_steady,wind_gusts)
+function ad = airdata(???,wind_steady,wind_gusts)
     phi     =
     theta   = x(8); % pitch angle
     psi     =
@@ -26,5 +26,5 @@ function w = airdata(???,wind_steady,wind_gusts)
     alpha =
     beta =
 
-    w = [Va;alpha;beta;wind_ned];
+    ad = [Va;alpha;beta;wind_ned];
 end
