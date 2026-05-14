@@ -1,12 +1,12 @@
-function out = forces_moments(x,w,delta,uav_parameters)
+function out = forces_moments(x,ad,delta,uav_parameters)
     phi     =
     theta   = x(8); % pitch angle
     p       = x(10); % body frame roll rate
     q       =
     r       =
 
-    Va = w(1);  % airspeed
-    alpha = w(2);
+    Va = ad(1);  % airspeed
+    alpha = ad(2);
     beta =
 
     delta_e =
